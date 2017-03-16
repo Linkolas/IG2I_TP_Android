@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/preferences"
+        android:orderInCategory="100"
+        android:title="@string/action_settings" />
+
+    <item
+        android:id="@+id/action_account"
+        android:orderInCategory="100"
+        android:title="@string/action_account" />
+
+    <item
+        android:id="@+id/quitter"
+        android:orderInCategory="100"
+        android:title="@string/quitter" />
+
+    <item
+        android:id="@+id/tester_notifs"
+        android:orderInCategory="100"
+        android:title="@string/tester_notifs" />
+
+</menu>

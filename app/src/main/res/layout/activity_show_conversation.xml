@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Login" >
+
+    <EditText
+        android:id="@+id/conversation_edtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/blanc"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/conversation_btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:enabled="true"
+        android:text="@string/ok" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RVMessages"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blanc"
+        android:layout_alignLeft="@+id/conversation_titre"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/conversation_titre"
+        android:layout_above="@+id/conversation_btnOK"/>
+
+    <!--<ScrollView
+        android:id="@+id/conversation_svMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/conversation_btnOK"
+        android:layout_alignLeft="@+id/conversation_titre"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/conversation_titre"
+        android:background="@color/blanc" >
+
+        <LinearLayout
+            android:id="@+id/conversation_svLayoutMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+        </LinearLayout>
+    </ScrollView>
+-->
+    <TextView
+        android:id="@+id/conversation_titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/conversation_btnOK"
+        android:gravity="center|center_horizontal"
+        android:text="@string/conversation"
+        android:textAlignment="gravity"
+        android:textColor="@color/blanc"
+        android:textSize="20pt" />
+
+</RelativeLayout>
